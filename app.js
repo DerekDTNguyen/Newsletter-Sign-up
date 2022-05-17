@@ -37,11 +37,11 @@ app.post("/", function(req, res) {
   };
   var jsonData = JSON.stringify(data);
 
-  const url = "https://us14.api.mailchimp.com/3.0/lists/8892bfebd2"
+  const url = "" //Audience list here
 
   const options = {
     method: "POST",
-    auth: "derek1:0240d638e72055b2326f2ef8cd82f3d0-us14"
+    auth: "" //Insert API KEY HERE
   }
 
   const request = https.request(url, options, function(response) {
@@ -64,8 +64,3 @@ app.post("/", function(req, res) {
 
 });
 
-// mailchimp API Key
-// 0240d638e72055b2326f2ef8cd82f3d0-us14
-
-// audience idea
-//8892bfebd2
